@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CDN Deployment Project</title>
+
+<meta name="description" content="Static website deployed with CDN and HTTPS">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(135deg,#2563eb,#1e40af);
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+.cache-box{
+    background:#eef4ff;
+    padding:25px;
+    border-left:5px solid #2563eb;
+    margin-top:30px;
+    border-radius:8px;
+}
+
+footer{
+    background:#111827;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Static Website with CDN</h1>
+    <p>Internship Deployment Task</p>
+</header>
+
+<div class="container">
+
+    <h2>Project Overview</h2>
+    <p>
+        This website demonstrates deployment of a static website
+        delivered through a Content Delivery Network (CDN) using HTTPS.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>HTTPS Enabled</h3>
+            <p>Secure access using SSL/TLS encryption.</p>
+        </div>
+
+        <div class="card">
+            <h3>CDN Distribution</h3>
+            <p>Content served from edge locations for faster delivery.</p>
+        </div>
+
+        <div class="card">
+            <h3>Static Hosting</h3>
+            <p>Lightweight and scalable architecture.</p>
+        </div>
+
+    </div>
+
+    <div class="cache-box">
+        <h3>Cache Strategy</h3>
+        <p>
+            HTML files are cached for 5 minutes to allow content updates.
+        </p>
+        <p>
+            Static assets such as CSS, JavaScript, and images are cached
+            for 30 days to improve performance and reduce origin requests.
+        </p>
+    </div>
+
+</div>
+
+<footer>
+    <p>Static Site Deployment Project © 2026</p>
+</footer>
+
+</body>
+</html>
